@@ -19,3 +19,13 @@ ColorClusters-PaintByNumber takes an input image and processes it through K-Mean
 2. **Set Number of Clusters (K)**: Define how many clusters (colors) you want to create. Lower numbers simplify the image; higher numbers retain more detail
 3. **Run K-Means Clustering**: The algorithm groups pixels into clusters, assigning a representative color to each
 4. **Generate Output**: The output image is a simplified version, ready to use for painting or artistic applications
+
+## 🔧 Installation
+
+Clone the repository and set up the necessary dependencies.
+
+```bash
+git clone https://github.com/administer03/ColorClusters-PaintByNumber.git
+cd ColorClusters-PaintByNumber
+pip install -r requirements.txt
+```
