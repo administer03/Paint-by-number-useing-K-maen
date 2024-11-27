@@ -29,3 +29,28 @@ git clone https://github.com/administer03/ColorClusters-PaintByNumber.git
 cd ColorClusters-PaintByNumber
 pip install -r requirements.txt
 ```
+## 🚀 Usage
+
+After installation, run the following command to start clustering an image:
+
+```bash
+python color_clusters.py --input <path_to_image> --clusters <number_of_clusters> --output <output_path>
+```
+
+### Example
+
+```bash
+python color_clusters.py --input my_image.jpg --clusters 8 --output clustered_image.png
+```
+
+### Parameters
+
+- `--input`: Path to the input image
+- `--clusters`: Number of color clusters (K) for the algorithm
+- `--output`: Path for saving the output image
+
+## 🎨 Examples
+
+| Original Image | K = 4 Clusters | K = 8 Clusters |
+|---------------|----------------|----------------|
+| [Placeholder] | [Placeholder]  | [Placeholder]  |
