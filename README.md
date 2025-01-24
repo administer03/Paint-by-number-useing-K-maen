@@ -1,10 +1,10 @@
 # ColorClusters-PaintByNumber
 
-Welcome to ColorClusters-PaintByNumber! This project combines the classic "paint-by-number" approach with the power of the K-Means clustering algorithm to create simplified, color-clustered versions of images. Perfect for generating custom paint-by-number templates, pixel art, or exploring clustering in visual contexts.
+Welcome to ColorClusters-PaintByNumber! This project combines the classic "paint-by-number" approach with the power of the K-Means clustering algorithm to create simplified, color-clustered versions of images. The algorithm reduces the image to a limited color palette and overlays numerical labels, making it perfect for custom paint-by-number kits, stylized artwork, or low-poly effects.
 
 ## 📌 Project Overview
 
-ColorClusters-PaintByNumber takes an input image and processes it through K-Means clustering to reduce the color palette, grouping similar colors into clusters. The result? A stylized, segmented version of the image with distinct color blocks, perfect for generating DIY paint-by-number kits or low-polygon art.
+ColorClusters-PaintByNumber analyzes an image and groups its colors into clusters using K-Means. The output consists of a simplified image with numbered regions and a corresponding color palette.
 
 ### Key Features
 
@@ -15,10 +15,10 @@ ColorClusters-PaintByNumber takes an input image and processes it through K-Mean
 
 ## ⚙️ How It Works
 
-1. **Input an Image**: Provide any standard image format
-2. **Set Number of Clusters (K)**: Define how many clusters (colors) you want to create. Lower numbers simplify the image; higher numbers retain more detail
-3. **Run K-Means Clustering**: The algorithm groups pixels into clusters, assigning a representative color to each
-4. **Generate Output**: The output image is a simplified version, ready to use for painting or artistic applications
+1. **Input an Image**: Provide an image in JPEG, PNG, or BMP format.
+2. **Set Number of Colors (K)**: Choose how many clusters/colors the algorithm should generate (default is 10).
+3. **Processing**: The algorithm groups pixels, assigns representative colors, detects shapes, and overlays numbers onto the corresponding regions.
+4. **Output the Final Image**: Saves the paint-by-number image and its color palette.
 
 ## 🔧 Installation
 
@@ -31,23 +31,23 @@ pip install -r requirements.txt
 ```
 ## 🚀 Usage
 
-After installation, run the following command to start clustering an image:
+Run the following command to process an image:
 
 ```bash
-python color_clusters.py --input <path_to_image> --clusters <number_of_clusters> --output <output_path>
+python main.py <input_image> <output_image> --colors <number_of_colors>
 ```
 
 ### Example
 
 ```bash
-python color_clusters.py --input my_image.jpg --clusters 8 --output clustered_image.png
+python main.py ./examples/example1.jpg ./results/output.jpg --colors 8
 ```
 
 ### Parameters
 
 - `--input`: Path to the input image
-- `--clusters`: Number of color clusters (K) for the algorithm
-- `--output`: Path for saving the output image
+- `--output`: Path to save the output image
+- `--clusters`: Number of color clusters (K)
 
 ## 🎨 Examples
 
