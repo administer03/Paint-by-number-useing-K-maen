@@ -53,7 +53,7 @@ python main.py ./examples/example1.jpg ./results/output.jpg --colors 8
 
 | Original Image | K = 4 Clusters | K = 8 Clusters |
 |---------------|----------------|----------------|
-| [Placeholder] | [Placeholder]  | [Placeholder]  |
+| ![Original](examples/example1.jpg) | ![K=4](docs/pictures/example1_k4.jpg) | ![K=4](docs/pictures/example1_k8.jpg)  |
 
 ## 🤝 Contributions
 
