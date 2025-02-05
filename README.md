@@ -6,13 +6,6 @@ Welcome to ColorClusters-PaintByNumber! This project combines the classic "paint
 
 ColorClusters-PaintByNumber analyzes an image and groups its colors into clusters using K-Means. The output consists of a simplified image with numbered regions and a corresponding color palette.
 
-### Key Features
-
-- **Color Reduction**: Uses K-Means clustering to reduce colors in an image while retaining its main details
-- **Customizable Clusters**: Adjust the number of color clusters to get the level of detail you want
-- **Paint-by-Number Format**: Outputs images with unique colors per cluster, ready to be used for paint-by-number projects
-- **Save & Share**: Export the clustered image in common formats (e.g., PNG, JPEG)
-
 ## ⚙️ How It Works
 
 1. **Input an Image**: Provide an image in JPEG, PNG, or BMP format.
@@ -62,7 +55,3 @@ Contributions, ideas, and feedback are welcome! Feel free to open issues or pull
 ## 📜 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-## 🌟 Acknowledgments
-
-Special thanks to the open-source libraries and community that make projects like this possible. Inspired by the intersection of art and data science!
